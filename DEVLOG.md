@@ -6,3 +6,10 @@ create documention on how to create workspace prompts:
 
 
 Read: `https://www.conventionalcommits.org/en/v1.0.0/` and create workspace promptfile /commit (see `.AI_docs\prompt-file.md`) to stage changes and commit, with a conventional commit message, without user confirmation
+
+create workspace prompt file /make-workspace-prompt (see `.AI_docs\prompt-file.md`)
+- takes highlevel description as argument
+- derives name from description for workspace prompt file
+- analyze description to create detailed instructions for ai agent
+- include `workflow` section that contains detailed instructions
+- include `result` section that describes desired outcome
