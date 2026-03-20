@@ -1,15 +1,28 @@
 Read: https://code.visualstudio.com/docs/copilot/customization/prompt-files and
-create documention on how to create workspace prompts: 
+create documention on how to create workspace prompts:
+
 - only limit explainations to .md files
 - create `.AI_docs\prompt-file.md` file
 - limit front-matter to `name` and `description`
 
-
 Read: `https://www.conventionalcommits.org/en/v1.0.0/` and create workspace promptfile /commit (see `.AI_docs\prompt-file.md`) to stage changes and commit, with a conventional commit message, without user confirmation
 
 create workspace prompt file /make-workspace-prompt (see `.AI_docs\prompt-file.md`)
+
 - takes highlevel description as argument
 - derives name from description for workspace prompt file
 - analyze description to create detailed instructions for ai agent
 - include `workflow` section that contains detailed instructions
 - include `result` section that describes desired outcome
+
+/make-workspace-prompt
+create a detailed implementation plan
+
+- the user will give a reference to a spec file which should be used to create the plan , plan should be created `ai_docs/plan/<implentation-plan-name>.md`, the `<implentation-plan-name>` should be derived from the spec.
+- Conduct detailed research, dont soley rely on your memory
+- Give code examples (psuedo code is fine)
+- Interfaces and api contracts should be detailed and not pseudo code
+- Should be completed and self-contained. (a junior should be able to use it)
+- Steps containing which files should be changed
+- How to test it
+- How to validate it
